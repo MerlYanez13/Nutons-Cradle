@@ -56,8 +56,6 @@ function draw(){
     
 }
 
-function keyPressed(){
-    if(keyCode==UP_ARROW){
-        Matter.Body.applyForce(bob1.body,bob1.body.position,{x:85,y:-55})
-    }
-}
+function mouseDragged(){
+    Matter.Body.setPosition(bob1.body,{x:mouseX,y:mouseY});
+  }
